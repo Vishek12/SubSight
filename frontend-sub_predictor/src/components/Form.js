@@ -15,7 +15,7 @@ class Form extends Component {
       num_video_views_for_the_last_30_days: 0,
       num_lowest_monthly_earnings: 0,
       num_highest_monthly_earnings: 0,
-      num_lowest_yearly_earnings: 0,
+      num_lowest_yearly_earnings: 0, 
       num_highest_yearly_earnings: 0,
       num_subscribers_for_last_30_days: 0,
       num_created_year: 0,
