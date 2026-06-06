@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import LoadingSc from './LoadingSc';
 
 
 class Form extends Component {
@@ -41,6 +42,7 @@ class Form extends Component {
       cat_category_Sports: 0,
       cat_category_Trailers: 0,
       cat_category_Travel_Events: 0,
+      isLoading: false
     };
   }
 
@@ -137,6 +139,8 @@ class Form extends Component {
         alert(`Prediction: ${response.data.prediction}`);
     } catch (error) {
         console.error('Error predicting subscribers:', error);
+    } finally {
+      const {isLoading} = this.state;
     }
 }
 
